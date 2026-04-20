@@ -85,7 +85,7 @@ The system is powered by a **three-microcontroller architecture** — one dedica
 <img src="./assets/structure3.jpeg" alt="BTS3" width="190">
 </td>
 <td width="25%">
-<img src="./assets/structure4.jpeg" alt="BTS4" width="190">
+<img src="./assets/structure4.png" alt="BTS4" width="200">
 </td>
 </tr>
 </table>
