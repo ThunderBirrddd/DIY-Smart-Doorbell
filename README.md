@@ -1,6 +1,6 @@
 # 🚪🔔 DIY Smart Doorbell System
 
-> A privacy-first, multi-microcontroller smart doorbell built entirely from scratch — custom PCB, 3D-printed housing, and zero cloud dependencies.
+> A privacy-first, multi-microcontroller smart doorbell built entirely from scratch  custom PCB, 3D-printed housing, and zero cloud dependencies.
 
 ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![ESPHome](https://img.shields.io/badge/ESPHome-000000.svg?style=for-the-badge&logo=esphome&logoColor=white)
@@ -23,7 +23,7 @@
 
 This is not a Ring. This is not a Nest. This is a **fully custom-engineered IoT doorbell** designed and built from scratch to deliver a commercial-quality experience without ever touching a proprietary cloud.
 
-The system is powered by a **three-microcontroller architecture** — one dedicated ESP32 each for camera streaming, audio I/O, and core logic — communicating over the local network through Home Assistant. It features real-time video streaming with an OV3660 3MP camera, full-duplex two-way audio over I2S, mmWave presence detection for loitering alerts, an addressable LED ring for visual feedback, haptic confirmation on press, and native Apple HomeKit integration — all running on a custom-soldered PCB inside a 3D-printed enclosure I designed from the ground up.
+The system is powered by a **three-microcontroller architecture** one dedicated ESP32 each for camera streaming, audio I/O, and core logic communicating over the local network through Home Assistant. It features real-time video streaming with an OV3660 3MP camera, full-duplex two-way audio over I2S, mmWave presence detection for loitering alerts, an addressable LED ring for visual feedback, haptic confirmation on press, and native Apple HomeKit integration all running on a custom-soldered PCB inside a 3D-printed enclosure I designed from the ground up.
 
 **No subscriptions. No cloud. Full control.**
 </td>
@@ -37,13 +37,13 @@ The system is powered by a **three-microcontroller architecture** — one dedica
 <td width="50%">
 
 ### ⚙️ Core Capabilities
-- **🌐 100% Local:** Zero cloud dependency — all processing, streaming, and automation happens on-premises.
+- **🌐 100% Local:** Zero cloud dependency all processing, streaming, and automation happens on-premises.
 - **📹 Real-Time Video:** OV3660 3MP camera streaming at optimized framerates over the local network.
 - **🔊 Two-Way Audio:** Dedicated ESP32 handles I2S microphone input (INMP441) and amplified speaker output (MAX98357A) simultaneously.
 - **📡 mmWave Presence:** LD2410 radar sensor detects loitering, motion, and stationary presence with distance and energy readings.
-- **💡 Addressable LED Ring:** 16x WS2812B LEDs with custom animated effects — revolving trails, breathing pulses, color-coded states.
+- **💡 Addressable LED Ring:** 16x WS2812B LEDs with custom animated effects revolving trails, breathing pulses, color-coded states.
 - **📳 Haptic Feedback:** Coin-type vibration motor gives tactile press confirmation to the visitor.
-- **🏠 HomeKit Native:** Fully exposed to Apple Home app via the Home Assistant bridge — doorbell events, camera feeds, and automation triggers.
+- **🏠 HomeKit Native:** Fully exposed to Apple Home app via the Home Assistant bridge doorbell events, camera feeds, and automation triggers.
 
 </td>
 <td width="50%">
@@ -96,32 +96,32 @@ The system is powered by a **three-microcontroller architecture** — one dedica
 
 | # | Component | Description | Qty |
 | :---: | :--- | :--- | :---: |
-| 1 | **ESP32-S3 Mini** | Main processing unit — runs core doorbell logic, manages peripherals (LED ring, relay, haptic motor, presence sensor), and coordinates the multi-MCU system. | 1 |
+| 1 | **ESP32-S3 Mini** | Main processing unit runs core doorbell logic, manages peripherals (LED ring, relay, haptic motor, presence sensor), and coordinates the multi-MCU system. | 1 |
 | 2 | **ESP32-CAM (OV3660)** | Dedicated camera module with a 3MP OV3660 sensor for real-time MJPEG video streaming over the local network. | 1 |
-| 3 | **ESP32 DevKit** | Dedicated audio processor — handles I2S microphone input, speaker output, and Home Assistant voice assistant pipeline. | 1 |
+| 3 | **ESP32 DevKit** | Dedicated audio processor handles I2S microphone input, speaker output, and Home Assistant voice assistant pipeline. | 1 |
 | 4 | **INMP441** | Low-noise omnidirectional I2S MEMS microphone for high-clarity voice capture at 16kHz / 16-bit. | 1 |
-| 5 | **MAX98357A** | I2S Class-D audio amplifier — drives the speaker directly from the audio ESP32's digital output. | 1 |
+| 5 | **MAX98357A** | I2S Class-D audio amplifier drives the speaker directly from the audio ESP32's digital output. | 1 |
 | 6 | **3W 40Ω Speaker** | Compact full-range speaker for visitor-facing audio playback and voice assistant responses. | 1 |
-| 7 | **LD2410 (24GHz mmWave)** | High-frequency presence detection radar — reports moving/still targets with distance and energy metrics for loitering detection. | 1 |
-| 8 | **WS2812B LED Ring (16x)** | Individually addressable RGB LED ring — provides animated visual feedback (green trail on press, red for alerts, breathing idle state). | 1 |
-| 9 | **TTP223 Touch Sensor** | Capacitive touch switch — replaces a mechanical button for a sleek, weatherproof doorbell trigger. | 1 |
-| 10 | **Coin Vibration Motor** | Miniature haptic motor — provides tactile press confirmation so the visitor knows the bell was triggered. | 1 |
-| 11 | **5V Relay Module** | Controls the physical chime relay — triggered on touch press with a 2-second safety auto-off script. | 1 |
-| 12 | **HiLink 5V 4A PSU** | Industrial-grade AC-DC power supply — provides stable, high-current 5V power for all three MCUs and peripherals. | 1 |
-| 13 | **Custom Soldered PCB** | Hand-designed and soldered circuit board — routes all signal, power, and I2S lines between components with clean trace management. | 1 |
-| 14 | **3D Printed Housing** | Fully custom-modeled enclosure designed from scratch in CAD — weather-resistant, ventilated, and sized to fit all internals precisely. | 1 |
+| 7 | **LD2410 (24GHz mmWave)** | High-frequency presence detection radar reports moving/still targets with distance and energy metrics for loitering detection. | 1 |
+| 8 | **WS2812B LED Ring (16x)** | Individually addressable RGB LED ring provides animated visual feedback (green trail on press, red for alerts, breathing idle state). | 1 |
+| 9 | **TTP223 Touch Sensor** | Capacitive touch switch replaces a mechanical button for a sleek, weatherproof doorbell trigger. | 1 |
+| 10 | **Coin Vibration Motor** | Miniature haptic motor provides tactile press confirmation so the visitor knows the bell was triggered. | 1 |
+| 11 | **5V Relay Module** | Controls the physical chime relay triggered on touch press with a 2-second safety auto-off script. | 1 |
+| 12 | **HiLink 5V 4A PSU** | Industrial-grade AC-DC power supply provides stable, high-current 5V power for all three MCUs and peripherals. | 1 |
+| 13 | **Custom Soldered PCB** | Hand-designed and soldered circuit board routes all signal, power, and I2S lines between components with clean trace management. | 1 |
+| 14 | **3D Printed Housing** | Fully custom-modeled enclosure designed from scratch in CAD weather-resistant, ventilated, and sized to fit all internals precisely. | 1 |
 
 ---
 
 ## 💻 Software Stack & Logic
 
-The firmware is built on **ESPHome**, compiled into optimized C++ and flashed to each ESP32 independently. Each microcontroller runs its own firmware, connects to Wi-Fi, and registers with Home Assistant over its native API — no MQTT broker required for core communication. Home Assistant then bridges everything into **Apple HomeKit**, exposing the camera as an HKSV (HomeKit Secure Video) source and the doorbell as an automation trigger.
+The firmware is built on **ESPHome**, compiled into optimized C++ and flashed to each ESP32 independently. Each microcontroller runs its own firmware, connects to Wi-Fi, and registers with Home Assistant over its native API no MQTT broker required for core communication. Home Assistant then bridges everything into **Apple HomeKit**, exposing the camera as an HKSV (HomeKit Secure Video) source and the doorbell as an automation trigger.
 
-### 🧠 ESP-Main — Core Logic & Peripheral Control
+### 🧠 ESP-Main Core Logic & Peripheral Control
 > Handles the doorbell touch input, relay, haptic motor, LED animations, and mmWave presence sensing.
 
 ```yaml
-# Doorbell Touch Handler — triggers relay, haptic feedback, and LED animation in sequence
+# Doorbell Touch Handler triggers relay, haptic feedback, and LED animation in sequence
 binary_sensor:
   - platform: gpio
     pin:
@@ -161,11 +161,11 @@ script:
           transition_length: 1s
 ```
 
-### 💡 Custom LED Animation — Revolving Trail Effect
+### 💡 Custom LED Animation Revolving Trail Effect
 > Addressable lambda running at 60fps on the WS2812B ring with exponential decay trailing.
 
 ```yaml
-# Revolving trail animation — a lit pixel orbits the ring with a fading tail behind it
+# Revolving trail animation a lit pixel orbits the ring with a fading tail behind it
 - addressable_lambda:
     name: "Green Revolve Trail"
     update_interval: 16ms           # ~60fps refresh
@@ -195,7 +195,7 @@ script:
 > Exposes moving/still target detection with distance and energy metrics for loitering automation.
 
 ```yaml
-# Presence sensing — feeds into Home Assistant for loitering alerts and automation triggers
+# Presence sensing feeds into Home Assistant for loitering alerts and automation triggers
 binary_sensor:
   - platform: ld2410
     has_target:
@@ -219,7 +219,7 @@ sensor:
 
 ---
 
-### 📹 ESP-CAM — Video Streaming
+### 📹 ESP-CAM Video Streaming
 
 > Dedicated camera MCU streaming MJPEG over HTTP with manual AGC tuning and a custom I2C bus to avoid pin conflicts.
 
@@ -249,7 +249,7 @@ esp32_camera:
   agc_mode: manual
   agc_value: 8                  # Fixed gain to prevent auto-exposure hunting
 
-# HTTP stream server on port 8080 — consumed directly by Home Assistant
+# HTTP stream server on port 8080 consumed directly by Home Assistant
 esp32_camera_web_server:
   - port: 8080
     mode: stream
@@ -257,12 +257,12 @@ esp32_camera_web_server:
 
 ---
 
-### 🔊 ESP-Audio — Two-Way Audio & Voice Assistant
+### 🔊 ESP-Audio Two-Way Audio & Voice Assistant
 
-> Handles full-duplex I2S audio — separate buses for input (INMP441) and output (MAX98357A) — and integrates with Home Assistant's voice assistant pipeline.
+> Handles full-duplex I2S audio separate buses for input (INMP441) and output (MAX98357A) and integrates with Home Assistant's voice assistant pipeline.
 
 ```yaml
-# Dual I2S bus configuration — physically separate clocks for mic and speaker
+# Dual I2S bus configuration physically separate clocks for mic and speaker
 i2s_audio:
   - id: i2s_out                     # Speaker output bus
     i2s_lrclk_pin: GPIO22
@@ -280,7 +280,7 @@ media_player:
     i2s_dout_pin: GPIO21
     mode: mono
 
-# INMP441 MEMS microphone — 16kHz 16-bit for voice capture
+# INMP441 MEMS microphone 16kHz 16-bit for voice capture
 microphone:
   - platform: i2s_audio
     id: doorbell_mic
@@ -291,7 +291,7 @@ microphone:
     sample_rate: 16000
     bits_per_sample: 16bit
 
-# Voice assistant pipeline — mic feeds into HA, responses play through speaker
+# Voice assistant pipeline mic feeds into HA, responses play through speaker
 voice_assistant:
   microphone: doorbell_mic
   media_player: doorbell_speaker
@@ -332,15 +332,15 @@ Visitor presses TTP223 Touch Sensor
 
 ### 🔉 Solving the Audio Feedback Loop with Push-to-Talk
 
-The biggest audio problem wasn't latency — it was **acoustic feedback**. The INMP441 microphone and the 3W speaker sit centimeters apart on the same PCB inside a compact enclosure. In a traditional full-duplex setup, the speaker output would feed right back into the mic, creating an unbearable echo loop.
+The biggest audio problem wasn't latency it was **acoustic feedback**. The INMP441 microphone and the 3W speaker sit centimeters apart on the same PCB inside a compact enclosure. In a traditional full-duplex setup, the speaker output would feed right back into the mic, creating an unbearable echo loop.
 
-**The solution: Push-to-Talk (PTT) half-duplex switching.** Instead of trying to run the mic and speaker simultaneously, the system toggles between them. When the homeowner speaks through their phone, the doorbell-side microphone is muted and only the speaker is active — the visitor hears the response clearly with zero echo. The moment the homeowner stops talking, the speaker output cuts and the microphone reopens, letting the visitor's voice stream back through cleanly.
+**The solution: Push-to-Talk (PTT) half-duplex switching.** Instead of trying to run the mic and speaker simultaneously, the system toggles between them. When the homeowner speaks through their phone, the doorbell-side microphone is muted and only the speaker is active the visitor hears the response clearly with zero echo. The moment the homeowner stops talking, the speaker output cuts and the microphone reopens, letting the visitor's voice stream back through cleanly.
 
-This approach completely eliminated the feedback loop without needing any software-based echo cancellation or DSP filtering — keeping the firmware lightweight and the audio latency minimal. The dual I2S bus architecture (separate clock lines for input and output) made the hardware-level switching clean, with no bus contention or glitch artifacts during transitions.
+This approach completely eliminated the feedback loop without needing any software-based echo cancellation or DSP filtering keeping the firmware lightweight and the audio latency minimal. The dual I2S bus architecture (separate clock lines for input and output) made the hardware-level switching clean, with no bus contention or glitch artifacts during transitions.
 
-### 🌐 Three ESP32s, One Network — Coordination Without Collisions
+### 🌐 Three ESP32s, One Network Coordination Without Collisions
 
-Running three independent ESP32s on the same Wi-Fi network introduced a coordination challenge. Each device maintains its own persistent API connection to Home Assistant, and the camera module is simultaneously pushing an MJPEG stream over HTTP. During peak usage — visitor presses the bell, video starts streaming, audio channel opens — all three devices are transmitting concurrently.
+Running three independent ESP32s on the same Wi-Fi network introduced a coordination challenge. Each device maintains its own persistent API connection to Home Assistant, and the camera module is simultaneously pushing an MJPEG stream over HTTP. During peak usage visitor presses the bell, video starts streaming, audio channel opens all three devices are transmitting concurrently.
 
 The key decisions that made this work:
 - **Static IP assignments** for each ESP, eliminating DHCP lease delays on reconnection and ensuring Home Assistant always knows where to reach them.
@@ -348,22 +348,22 @@ The key decisions that made this work:
 - **Camera output power tuned down** to 15dB to reduce RF interference with the other two ESPs operating in close physical proximity inside the same enclosure.
 - **Idle framerate dropped to 0.1 fps** on the camera when no one is actively viewing, keeping bandwidth near-zero until a doorbell event triggers the stream.
 
-### 🔌 Custom PCB — Signal Routing & Power Distribution
+### 🔌 Custom PCB Signal Routing & Power Distribution
 
 The entire system runs off a single HiLink 5V 4A AC-DC supply, which means clean power distribution was critical. Three microcontrollers, an I2S amplifier, a relay, a haptic motor, and 16 addressable LEDs all share the same 5V rail.
 
 The biggest lessons from the PCB design:
-- **Separating digital and analog grounds** where possible — the I2S signal lines (BCLK, LRCLK, DIN/DOUT) are extremely sensitive to noise. Routing them too close to the relay switching traces or the WS2812B data line introduced audible clicks and pops in the speaker output. Rerouting with wider spacing and adding decoupling capacitors near the MAX98357A cleaned it up.
-- **The LD2410 radar module** needed careful placement — its 24GHz emissions caused occasional ghost triggers when the antenna was too close to the ESP32's Wi-Fi antenna. Positioning it on the opposite edge of the PCB with a ground plane separation resolved the false positives.
-- **Current budgeting** — the WS2812B ring alone can pull up to 960mA at full white brightness. The 4A supply has headroom, but the traces carrying that current needed to be wide enough to avoid voltage sag affecting the ESP32s. Learned this the hard way when the LEDs at full brightness caused the camera ESP to brown-out and reboot.
+- **Separating digital and analog grounds** where possible the I2S signal lines (BCLK, LRCLK, DIN/DOUT) are extremely sensitive to noise. Routing them too close to the relay switching traces or the WS2812B data line introduced audible clicks and pops in the speaker output. Rerouting with wider spacing and adding decoupling capacitors near the MAX98357A cleaned it up.
+- **The LD2410 radar module** needed careful placement its 24GHz emissions caused occasional ghost triggers when the antenna was too close to the ESP32's Wi-Fi antenna. Positioning it on the opposite edge of the PCB with a ground plane separation resolved the false positives.
+- **Current budgeting** the WS2812B ring alone can pull up to 960mA at full white brightness. The 4A supply has headroom, but the traces carrying that current needed to be wide enough to avoid voltage sag affecting the ESP32s. Learned this the hard way when the LEDs at full brightness caused the camera ESP to brown-out and reboot.
 
-### 🖨️ Enclosure — Designed from Scratch, Printed from Scratch
+### 🖨️ Enclosure Designed from Scratch, Printed from Scratch
 
-The housing wasn't an afterthought — it was iterated on through multiple revisions in CAD. Key design constraints:
-- **Ventilation without water ingress** — the HiLink PSU and three ESP32s generate noticeable heat in a sealed box. Small louvered vents were added on the underside (rain-shielded by gravity) to allow passive airflow without letting water in from above.
-- **Acoustic path for the speaker and mic** — the enclosure needed openings positioned directly in front of the speaker cone and mic port, but angled to minimize direct acoustic coupling between the two (reducing the physical feedback path that the PTT logic handles in firmware).
-- **Modular access** — the back plate is secured with snap-fit clips instead of screws, making it easy to pull the unit off the wall for firmware reflashing or hardware swaps without tools.
-- **TTP223 touch surface** — the capacitive sensor works through the 3D-printed wall, but the plastic thickness directly affects sensitivity. After testing multiple wall thicknesses, 1.2mm PLA gave the best balance between reliable touch detection and structural rigidity.
+The housing wasn't an afterthought it was iterated on through multiple revisions in CAD. Key design constraints:
+- **Ventilation without water ingress** the HiLink PSU and three ESP32s generate noticeable heat in a sealed box. Small louvered vents were added on the underside (rain-shielded by gravity) to allow passive airflow without letting water in from above.
+- **Acoustic path for the speaker and mic** the enclosure needed openings positioned directly in front of the speaker cone and mic port, but angled to minimize direct acoustic coupling between the two (reducing the physical feedback path that the PTT logic handles in firmware).
+- **Modular access** the back plate is secured with snap-fit clips instead of screws, making it easy to pull the unit off the wall for firmware reflashing or hardware swaps without tools.
+- **TTP223 touch surface** the capacitive sensor works through the 3D-printed wall, but the plastic thickness directly affects sensitivity. After testing multiple wall thicknesses, 1.2mm PLA gave the best balance between reliable touch detection and structural rigidity.
 
 ---
 
@@ -374,6 +374,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  <i>Designed, engineered, and built from scratch — hardware, firmware, and enclosure.</i><br/>
+  <i>Designed, engineered, and built from scratch hardware, firmware, and enclosure.</i><br/>
   <b>No off-the-shelf kits. No cloud. Just engineering.</b>
 </p>
